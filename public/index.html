@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat express y socket.io</title>
+    <link rel="stylesheet" href="/chat.css">
+</head>
+<body>
+
+
+
+        <div style="align-items: center;justify-content: center;">
+            <img style="float: left; " src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Ski_trail_rating_symbol-green_circle.svg/600px-Ski_trail_rating_symbol-green_circle.svg.png" 
+            width="25"
+            height="25"
+            >
+            <h2 class="online"><b id="conexions"></b> Online </h2>
+        </div>
+
+
+
+    <hr>
+
+	<ul id="chat"></ul>
+	<form id="chat-form">
+		<input type="text" id="message-text" autocomplete="off" required>
+		<button>Enviar</button>
+	</form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/chat.js"></script>
+
+  
+
+    </body>
+</html>
